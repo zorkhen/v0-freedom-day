@@ -1,22 +1,52 @@
 export function ResourcesSection() {
-  const resources = [
+  const reports = [
     {
-      category: "报告",
-      title: "2024年全球奴役指数",
+      category: "Global Index",
+      title: "Global Slavery Index 2023",
+      publisher: "Walk Free Foundation",
       description:
-        "全面分析全球现代奴役的规模、分布和政府应对措施的年度报告。",
+        "The world's most comprehensive data on modern slavery, covering 160 countries. Includes government response rankings, prevalence estimates, and vulnerability factors.",
+      href: "https://www.walkfree.org/global-slavery-index/",
     },
     {
-      category: "指南",
-      title: "识别人口贩卖迹象",
+      category: "ILO Report",
+      title: "Global Estimates of Modern Slavery",
+      publisher: "International Labour Organization",
       description:
-        "帮助公众识别和报告潜在人口贩卖案件的实用指南，包括关键警告信号和报告渠道。",
+        "Joint ILO and Walk Free report providing the most authoritative global statistics on forced labor and forced marriage, updated in 2022.",
+      href: "https://www.ilo.org/global/topics/forced-labour/publications/WCMS_854733/lang--en/index.htm",
     },
     {
-      category: "教育",
-      title: "学校教育资源包",
+      category: "UN Report",
+      title: "Global Report on Trafficking in Persons",
+      publisher: "UNODC",
       description:
-        "为教师设计的课堂资源，帮助学生了解现代奴役问题并培养批判性思维。",
+        "Biennial report by the UN Office on Drugs and Crime analyzing trafficking patterns, victim profiles, criminal justice responses, and trends across world regions.",
+      href: "https://www.unodc.org/unodc/data-and-analysis/glotip.html",
+    },
+    {
+      category: "UK Legislation",
+      title: "Modern Slavery Act 2015",
+      publisher: "UK Parliament",
+      description:
+        "The United Kingdom's landmark legislation consolidating offenses related to trafficking and slavery. Requires large companies to publish annual transparency statements on their supply chains.",
+      href: "https://www.legislation.gov.uk/ukpga/2015/30/contents",
+    },
+    {
+      category: "Educational",
+      title: "Free the Slaves — Learning Resources",
+      publisher: "Free the Slaves NGO",
+      description:
+        "Guides and educational materials for teachers, students, and community groups looking to learn about and discuss modern slavery in a structured way.",
+      href: "https://www.freetheslaves.net/",
+    },
+    {
+      category: "Journalism",
+      title: "CNN Freedom Project",
+      publisher: "CNN",
+      description:
+        "The original journalism initiative behind #MyFreedomDay. A long-running investigative series covering individual stories of modern slavery and the global response to it.",
+      href: "https://edition.cnn.com/specials/world/freedom-project",
     },
   ]
 
@@ -24,55 +54,72 @@ export function ResourcesSection() {
     <section id="resources" className="bg-neutral-50 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
+        <div className="max-w-2xl mb-14">
           <p className="text-sm font-semibold text-red-700 uppercase tracking-wider mb-3">
-            资源中心
+            Resources
           </p>
           <h2 className="text-3xl font-bold text-neutral-900 sm:text-4xl tracking-tight text-balance">
-            深入了解与行动
+            Further Reading &amp; Research
           </h2>
-          <p className="mt-4 text-lg text-neutral-600 leading-7">
-            探索我们精选的资源，获取更多信息并找到参与的方式。
+          <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
+            The following reports, datasets, and publications are authoritative sources for
+            anyone seeking to understand the scale, mechanics, and legal frameworks around
+            modern slavery.
           </p>
         </div>
 
-        {/* Resource cards */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {resources.map((resource, index) => (
-            <div
-              key={index}
-              className="bg-white border border-neutral-200 overflow-hidden"
+        {/* Resource list */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {reports.map((resource) => (
+            <a
+              key={resource.title}
+              href={resource.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white border border-neutral-200 p-7 flex flex-col hover:border-neutral-400"
             >
-              {/* Image placeholder */}
-              <div className="aspect-[16/10] bg-neutral-200 flex items-center justify-center">
-                <div className="w-12 h-12 bg-neutral-300 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-neutral-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
+              <p className="text-xs font-semibold text-red-700 uppercase tracking-wider mb-2">
+                {resource.category}
+              </p>
+              <h3 className="text-base font-semibold text-neutral-900 mb-1 group-hover:underline">
+                {resource.title}
+              </h3>
+              <p className="text-xs text-neutral-500 mb-3">{resource.publisher}</p>
+              <p className="text-sm text-neutral-600 leading-relaxed flex-1">
+                {resource.description}
+              </p>
+              <div className="mt-5 flex items-center gap-1 text-sm font-medium text-red-700">
+                View resource
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
               </div>
-              <div className="p-6">
-                <p className="text-xs font-semibold text-red-700 uppercase tracking-wider mb-2">
-                  {resource.category}
-                </p>
-                <h3 className="text-lg font-semibold text-neutral-900 mb-2">
-                  {resource.title}
-                </h3>
-                <p className="text-neutral-600 text-sm leading-6 mb-4">
-                  {resource.description}
-                </p>
-                <a
-                  href="#"
-                  className="inline-flex items-center text-sm font-medium text-red-700 hover:text-red-800"
-                >
-                  了解更多
-                  <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+            </a>
           ))}
+        </div>
+
+        {/* Key organizations */}
+        <div className="mt-16">
+          <h3 className="text-lg font-semibold text-neutral-900 mb-6">Key Organizations Working on This Issue</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { name: "International Justice Mission", url: "https://www.ijm.org", focus: "Rescue & restoration" },
+              { name: "Anti-Slavery International", url: "https://www.antislavery.org", focus: "Advocacy & policy" },
+              { name: "Polaris Project", url: "https://polarisproject.org", focus: "US hotline & research" },
+              { name: "ECPAT International", url: "https://www.ecpat.org", focus: "Child trafficking" },
+            ].map((org) => (
+              <a
+                key={org.name}
+                href={org.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-neutral-200 bg-white px-5 py-4 hover:border-neutral-400"
+              >
+                <p className="font-medium text-sm text-neutral-900">{org.name}</p>
+                <p className="text-xs text-neutral-500 mt-1">{org.focus}</p>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>

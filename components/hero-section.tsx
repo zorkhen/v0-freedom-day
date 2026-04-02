@@ -19,29 +19,29 @@ export function HeroSection() {
 
           {/* Main headline */}
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl text-balance">
-            自由是每个人的
-            <span className="text-red-500">基本权利</span>
+            Freedom is a
+            <span className="text-red-500"> Fundamental Right</span>
           </h1>
 
           {/* Supporting text */}
           <p className="mt-6 text-lg leading-8 text-neutral-300 max-w-xl">
-            全球有超过5000万人正处于现代奴役之中。这不是历史，而是正在发生的现实。
-            加入我们，共同提高意识，打击人口贩卖，为受害者发声。
+            Over 50 million people are trapped in modern slavery today. This is not history — it is happening now.
+            Join us to raise awareness, combat human trafficking, and give voice to the voiceless.
           </p>
 
           {/* Statistics */}
           <div className="mt-10 grid grid-cols-3 gap-8">
             <div>
               <p className="text-3xl font-bold text-red-500">50M+</p>
-              <p className="mt-1 text-sm text-neutral-400">现代奴役受害者</p>
+              <p className="mt-1 text-sm text-neutral-400">Victims of Modern Slavery</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-red-500">150B</p>
-              <p className="mt-1 text-sm text-neutral-400">非法利润（美元）</p>
+              <p className="text-3xl font-bold text-red-500">$150B</p>
+              <p className="mt-1 text-sm text-neutral-400">Illegal Profits Annually</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-red-500">167</p>
-              <p className="mt-1 text-sm text-neutral-400">受影响国家</p>
+              <p className="mt-1 text-sm text-neutral-400">Countries Affected</p>
             </div>
           </div>
 
@@ -51,14 +51,14 @@ export function HeroSection() {
               size="lg"
               className="bg-red-700 text-white hover:bg-red-800 px-8"
             >
-              采取行动
+              Take Action
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-neutral-600 text-white hover:bg-neutral-800 hover:text-white"
             >
-              了解更多
+              Learn More
             </Button>
           </div>
         </div>

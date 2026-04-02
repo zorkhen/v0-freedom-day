@@ -3,27 +3,27 @@ import Link from "next/link"
 export function Footer() {
   const footerLinks = {
     about: [
-      { name: "我们的使命", href: "#" },
-      { name: "团队介绍", href: "#" },
-      { name: "合作伙伴", href: "#" },
-      { name: "年度报告", href: "#" },
+      { name: "Our Mission", href: "#" },
+      { name: "Our Team", href: "#" },
+      { name: "Partners", href: "#" },
+      { name: "Annual Report", href: "#" },
     ],
     resources: [
-      { name: "教育资源", href: "#" },
-      { name: "研究报告", href: "#" },
-      { name: "新闻中心", href: "#" },
-      { name: "常见问题", href: "#" },
+      { name: "Education Resources", href: "#" },
+      { name: "Research Reports", href: "#" },
+      { name: "News Center", href: "#" },
+      { name: "FAQ", href: "#" },
     ],
     action: [
-      { name: "捐款支持", href: "#" },
-      { name: "志愿服务", href: "#" },
-      { name: "举办活动", href: "#" },
-      { name: "企业合作", href: "#" },
+      { name: "Donate", href: "#" },
+      { name: "Volunteer", href: "#" },
+      { name: "Host an Event", href: "#" },
+      { name: "Corporate Partnership", href: "#" },
     ],
     legal: [
-      { name: "隐私政策", href: "#" },
-      { name: "使用条款", href: "#" },
-      { name: "Cookie 政策", href: "#" },
+      { name: "Privacy Policy", href: "#" },
+      { name: "Terms of Use", href: "#" },
+      { name: "Cookie Policy", href: "#" },
     ],
   }
 
@@ -43,9 +43,9 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-neutral-400 leading-7 max-w-md mb-6">
-              #MyFreedomDay 是一项全球性教育倡议，
-              旨在提高对现代奴役的认识并动员年轻人采取行动。
-              加入我们，共同为自由而战。
+              #MyFreedomDay is a global education initiative
+              aimed at raising awareness about modern slavery and mobilizing young people to take action.
+              Join us in the fight for freedom.
             </p>
 
             {/* Contact info */}
@@ -61,7 +61,7 @@ export function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>北京市朝阳区建国路88号</span>
+                <span>123 Freedom Street, New York, NY 10001</span>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export function Footer() {
           {/* Links columns */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
-              关于我们
+              About Us
             </h3>
             <ul className="space-y-3">
               {footerLinks.about.map((link) => (
@@ -87,7 +87,7 @@ export function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
-              资源
+              Resources
             </h3>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
@@ -105,7 +105,7 @@ export function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
-              参与行动
+              Take Action
             </h3>
             <ul className="space-y-3">
               {footerLinks.action.map((link) => (
@@ -198,7 +198,7 @@ export function Footer() {
       <div className="border-t border-neutral-800 bg-neutral-950">
         <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
           <p className="text-center text-sm text-neutral-500">
-            © 2026 #MyFreedomDay. 版权所有。致力于终结现代奴役。
+            © 2026 #MyFreedomDay. All rights reserved. Committed to ending modern slavery.
           </p>
         </div>
       </div>

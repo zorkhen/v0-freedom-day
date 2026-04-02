@@ -12,7 +12,7 @@ export function AboutSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-sm text-neutral-500">项目图片占位</p>
+                <p className="text-sm text-neutral-500">Project Image Placeholder</p>
               </div>
             </div>
             {/* Accent element */}
@@ -22,21 +22,21 @@ export function AboutSection() {
           {/* Content */}
           <div>
             <p className="text-sm font-semibold text-red-700 uppercase tracking-wider mb-3">
-              关于项目
+              About the Project
             </p>
             <h2 className="text-3xl font-bold text-neutral-900 sm:text-4xl tracking-tight text-balance">
-              什么是 #MyFreedomDay？
+              What is #MyFreedomDay?
             </h2>
             <div className="mt-6 space-y-4 text-neutral-600 leading-7">
               <p>
-                #MyFreedomDay 是一项全球性教育倡议，旨在让年轻人参与对抗现代奴役的行动。
-                这项活动由 CNN 自由计划发起，每年三月举行，鼓励全球学生和社区成员分享对自由的理解，
-                并采取实际行动来帮助终结人口贩卖。
+                #MyFreedomDay is a global education initiative designed to engage young people in the fight against modern slavery.
+                Launched by CNN Freedom Project, this annual event held every March encourages students and community members worldwide 
+                to share their understanding of freedom and take meaningful action to help end human trafficking.
               </p>
               <p>
-                现代奴役采取多种形式，包括强迫劳动、债务奴役、强迫婚姻和人口贩卖。
-                受害者可能在工厂、农场、建筑工地、私人住宅或其他地方被剥削。
-                通过提高意识和教育，我们可以共同识别这些问题并采取行动。
+                Modern slavery takes many forms, including forced labor, debt bondage, forced marriage, and human trafficking.
+                Victims may be exploited in factories, farms, construction sites, private homes, or other locations.
+                Through awareness and education, we can work together to identify these issues and take action.
               </p>
             </div>
             
@@ -48,7 +48,7 @@ export function AboutSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-neutral-700">提高公众对现代奴役问题的认识</p>
+                <p className="text-neutral-700">Raise public awareness about modern slavery</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0 w-6 h-6 bg-red-700 flex items-center justify-center">
@@ -56,7 +56,7 @@ export function AboutSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-neutral-700">教育年轻人识别人口贩卖的迹象</p>
+                <p className="text-neutral-700">Educate young people to recognize signs of trafficking</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="flex-shrink-0 w-6 h-6 bg-red-700 flex items-center justify-center">
@@ -64,7 +64,7 @@ export function AboutSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-neutral-700">动员社区采取有意义的行动</p>
+                <p className="text-neutral-700">Mobilize communities to take meaningful action</p>
               </div>
             </div>
           </div>

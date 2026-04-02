@@ -6,11 +6,11 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
 const navigation = [
-  { name: "关于我们", href: "#about" },
-  { name: "问题现状", href: "#issue" },
-  { name: "采取行动", href: "#action" },
-  { name: "资源中心", href: "#resources" },
-  { name: "联系我们", href: "#contact" },
+  { name: "About", href: "#about" },
+  { name: "The Issue", href: "#issue" },
+  { name: "Take Action", href: "#action" },
+  { name: "Resources", href: "#resources" },
+  { name: "Contact", href: "#contact" },
 ]
 
 export function Header() {
@@ -66,7 +66,7 @@ export function Header() {
             className="bg-red-700 text-white hover:bg-red-800"
             size="lg"
           >
-            立即捐款
+            Donate Now
           </Button>
         </div>
       </nav>
@@ -90,7 +90,7 @@ export function Header() {
                 className="w-full bg-red-700 text-white hover:bg-red-800"
                 size="lg"
               >
-                立即捐款
+                Donate Now
               </Button>
             </div>
           </div>

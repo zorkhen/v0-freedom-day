@@ -1,32 +1,32 @@
 export function IssueSection() {
   const issues = [
     {
-      title: "强迫劳动",
+      title: "Forced Labor",
       description:
-        "数百万人被迫在恶劣条件下工作，无法自由离开。他们可能在工厂、农业、建筑业或家庭服务中被剥削。受害者通常被没收证件，受到威胁或实际暴力。",
+        "Millions of people are forced to work under harsh conditions with no freedom to leave. They may be exploited in factories, agriculture, construction, or domestic service. Victims often have their documents confiscated and face threats or actual violence.",
       stat: "27.6M",
-      statLabel: "强迫劳动受害者",
+      statLabel: "Forced Labor Victims",
     },
     {
-      title: "强迫婚姻",
+      title: "Forced Marriage",
       description:
-        "强迫婚姻影响着全球数百万人，主要是妇女和女孩。受害者在没有同意的情况下被迫结婚，往往面临身体和心理虐待。",
+        "Forced marriage affects millions of people globally, primarily women and girls. Victims are married without their consent and often face physical and psychological abuse.",
       stat: "22M",
-      statLabel: "强迫婚姻受害者",
+      statLabel: "Forced Marriage Victims",
     },
     {
-      title: "债务奴役",
+      title: "Debt Bondage",
       description:
-        "当人们被迫工作以偿还债务，而债务条件使他们永远无法还清时，就会发生债务奴役。这是世界上最普遍的奴役形式之一。",
+        "Debt bondage occurs when people are forced to work to repay a debt, under terms that make it impossible for them to ever pay it off. It is one of the most prevalent forms of slavery in the world.",
       stat: "50%",
-      statLabel: "强迫劳动中的债务奴役",
+      statLabel: "Of Forced Labor is Debt Bondage",
     },
     {
-      title: "人口贩卖",
+      title: "Human Trafficking",
       description:
-        "人口贩卖涉及通过武力、欺诈或胁迫招募、运输或窝藏人员进行剥削。受害者可能被贩卖用于性剥削、强迫劳动或器官摘取。",
+        "Human trafficking involves recruiting, transporting, or harboring people through force, fraud, or coercion for exploitation. Victims may be trafficked for sexual exploitation, forced labor, or organ harvesting.",
       stat: "4.8M",
-      statLabel: "性剥削受害者",
+      statLabel: "Sexual Exploitation Victims",
     },
   ]
 
@@ -36,14 +36,14 @@ export function IssueSection() {
         {/* Section header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="text-sm font-semibold text-red-700 uppercase tracking-wider mb-3">
-            问题现状
+            The Issue
           </p>
           <h2 className="text-3xl font-bold text-neutral-900 sm:text-4xl tracking-tight text-balance">
-            现代奴役的多种形式
+            The Many Forms of Modern Slavery
           </h2>
           <p className="mt-4 text-lg text-neutral-600 leading-7">
-            现代奴役不是过去的遗迹，而是当今世界面临的严峻现实。
-            了解其不同形式是打击它的第一步。
+            Modern slavery is not a relic of the past — it is a harsh reality facing the world today.
+            Understanding its different forms is the first step toward fighting it.
           </p>
         </div>
 
@@ -72,10 +72,10 @@ export function IssueSection() {
         <div className="mt-16 bg-red-700 p-8 md:p-12">
           <blockquote className="text-center">
             <p className="text-xl md:text-2xl font-medium text-white leading-relaxed max-w-3xl mx-auto text-balance">
-              {"\"自由的真正考验不是我们拥有自由，而是我们如何为没有自由的人争取自由。\""}
+              {"\"The true measure of freedom is not that we have it, but how we fight for those who do not.\""}
             </p>
             <footer className="mt-6">
-              <p className="text-red-200">— 人权倡导者</p>
+              <p className="text-red-200">— Human Rights Advocate</p>
             </footer>
           </blockquote>
         </div>

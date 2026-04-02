@@ -1,6 +1,16 @@
 export function HeroSection() {
   return (
     <section className="relative bg-neutral-900">
+      {/* Background image with dark overlay */}
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src="/images/hero-bg.jpg"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-neutral-900/60" />
+      </div>
       <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="max-w-3xl">
           {/* Hashtag badge */}

@@ -30,9 +30,18 @@ export function AboutSection() {
                 exploitation to go unnoticed and unreported.
               </p>
             </div>
+          {/* Image */}
+            <div className="mt-8">
+              <img
+                src="/images/about-campaign.jpg"
+                alt="Students holding awareness signs at a #MyFreedomDay school event"
+                className="w-full object-cover aspect-video"
+              />
+              <p className="mt-2 text-xs text-neutral-400">
+                Students participating in a #MyFreedomDay awareness event.
+              </p>
+            </div>
           </div>
-
-          {/* Right column: what is modern slavery */}
           <div>
             <p className="text-sm font-semibold text-red-700 uppercase tracking-wider mb-3">
               Defining the Issue

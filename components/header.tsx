@@ -10,6 +10,7 @@ const navigation = [
   { name: "Warning Signs", href: "#signs" },
   { name: "Resources", href: "#resources" },
   { name: "Report", href: "#report" },
+  { name: "Gallery", href: "/gallery" },
 ]
 
 export function Header() {

@@ -7,6 +7,7 @@ export function Footer() {
     { name: "Warning Signs", href: "#signs" },
     { name: "How to Report", href: "#report" },
     { name: "Further Reading", href: "#resources" },
+    { name: "Gallery", href: "/gallery" },
   ]
 
   const legalLinks = [

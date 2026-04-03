@@ -5,11 +5,6 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
 const navigation = [
-  { name: "About", href: "#about" },
-  { name: "The Issue", href: "#issue" },
-  { name: "Warning Signs", href: "#signs" },
-  { name: "Resources", href: "#resources" },
-  { name: "Report", href: "#report" },
   { name: "Gallery", href: "/gallery" },
 ]
 

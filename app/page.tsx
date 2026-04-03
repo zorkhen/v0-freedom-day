@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/about-section"
 import { IssueSection } from "@/components/issue-section"
 import { SignsSection } from "@/components/signs-section"
 import { ResourcesSection } from "@/components/resources-section"
+import { SectionNavigator } from "@/components/section-navigator"
 import { Footer } from "@/components/footer"
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
         <SignsSection />
         <ResourcesSection />
       </main>
+      <SectionNavigator />
       <Footer />
     </div>
   )

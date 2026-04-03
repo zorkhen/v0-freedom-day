@@ -43,7 +43,7 @@ export function SignsSection() {
   ]
 
   return (
-    <section id="signs" className="bg-white py-20 lg:py-28">
+    <section id="signs" className="scroll-mt-28 bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl mb-14">
@@ -85,7 +85,7 @@ export function SignsSection() {
         </div>
 
         {/* Report callout */}
-        <div id="report" className="mt-14 bg-neutral-900 px-8 py-10 md:px-12">
+        <div id="report" className="scroll-mt-28 mt-14 bg-neutral-900 px-8 py-10 md:px-12">
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div>
               <h3 className="text-xl font-bold text-white mb-3">How to Report</h3>

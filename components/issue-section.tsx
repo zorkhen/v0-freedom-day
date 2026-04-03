@@ -51,7 +51,7 @@ export function IssueSection() {
   ]
 
   return (
-    <section id="issue" className="bg-neutral-50 py-20 lg:py-28">
+    <section id="issue" className="scroll-mt-28 bg-neutral-50 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl mb-14">

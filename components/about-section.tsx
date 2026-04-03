@@ -1,6 +1,6 @@
 export function AboutSection() {
   return (
-    <section id="about" className="bg-white py-20 lg:py-28">
+    <section id="about" className="scroll-mt-28 bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left column: what it is */}

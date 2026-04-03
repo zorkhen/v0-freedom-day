@@ -1,43 +1,43 @@
 export function SignsSection() {
   const signs = [
     {
-      context: "In Public",
+      context: "Placeholder Context One",
       indicators: [
-        "Appears disoriented, confused, or fearful",
-        "Does not make eye contact or speak freely",
-        "Has a third party speaking on their behalf",
-        "Seems not to know where they are or what city/country they are in",
-        "Wears clothing inappropriate for the weather",
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+        "Sed do eiusmod tempor incididunt ut labore et dolore",
+        "Ut enim ad minim veniam quis nostrud exercitation",
+        "Duis aute irure dolor in reprehenderit in voluptate",
+        "Excepteur sint occaecat cupidatat non proident",
       ],
     },
     {
-      context: "In the Workplace",
+      context: "Placeholder Context Two",
       indicators: [
-        "Works excessively long hours with no breaks",
-        "Not paid directly — wages go to someone else",
-        "Lives at the place of work with many others in poor conditions",
-        "Documents (passport, ID) are held by an employer",
-        "Not allowed to take breaks or days off",
+        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur",
+        "At vero eos et accusamus et iusto odio dignissimos",
+        "Nam libero tempore cum soluta nobis est eligendi optio",
+        "Temporibus autem quibusdam et aut officiis debitis",
+        "Quis autem vel eum iure reprehenderit qui in ea voluptate",
       ],
     },
     {
-      context: "In the Home",
+      context: "Placeholder Context Three",
       indicators: [
-        "Domestic worker who is not allowed to leave or speak privately",
-        "Sleeps in a shared, inadequate space on the premises",
-        "Shows signs of physical abuse or malnourishment",
-        "Unaware of their legal rights or unable to access support",
-        "Has no personal possessions or freedom of movement",
+        "Itaque earum rerum hic tenetur a sapiente delectus",
+        "Neque porro quisquam est qui dolorem ipsum quia dolor",
+        "Ut labore et dolore magnam aliquam quaerat voluptatem",
+        "Quid est enim aliud agere nisi turpiter atque improbe",
+        "Omnis voluptas assumenda est omnis dolor repellendus",
       ],
     },
     {
-      context: "In Children",
+      context: "Placeholder Context Four",
       indicators: [
-        "Absent from school or frequently changing schools",
-        "Appears malnourished, tired, or poorly clothed",
-        "An adult controls all communication with the child",
-        "Child does not know the adult they are with well",
-        "Shows signs of physical abuse or fear of adults",
+        "Similique sunt in culpa qui officia deserunt mollitia",
+        "Et harum quidem rerum facilis est et expedita distinctio",
+        "Nam libero tempore cum soluta nobis eligendi optio",
+        "Temporibus autem quibusdam aut rerum necessitatibus",
+        "Saepe eveniet ut et voluptates repudiandae sint molestiae",
       ],
     },
   ]
@@ -48,16 +48,15 @@ export function SignsSection() {
         {/* Section header */}
         <div className="max-w-2xl mb-14">
           <p className="text-sm font-semibold text-red-700 uppercase tracking-wider mb-3">
-            Awareness
+            Placeholder Label
           </p>
           <h2 className="text-3xl font-bold text-neutral-900 sm:text-4xl tracking-tight text-balance">
-            Recognizing the Warning Signs
+            Placeholder Section Heading
           </h2>
           <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
-            Modern slavery is often hidden in plain sight. These indicators do not confirm
-            that someone is a victim, but they may signal that something is wrong. If you
-            suspect modern slavery, do not confront the suspected trafficker — contact the
-            relevant authorities.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris.
           </p>
         </div>
 
@@ -88,41 +87,41 @@ export function SignsSection() {
         <div id="report" className="scroll-mt-28 mt-14 bg-neutral-900 px-8 py-10 md:px-12">
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div>
-              <h3 className="text-xl font-bold text-white mb-3">How to Report</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Placeholder Report Heading</h3>
               <p className="text-neutral-400 leading-relaxed text-sm">
-                If you believe someone is a victim of trafficking or modern slavery, contact
-                the relevant national hotline. Do not put yourself or the potential victim in
-                danger. If there is an immediate threat to life, call emergency services first.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip.
               </p>
               <p className="mt-4 text-neutral-400 leading-relaxed text-sm">
-                When reporting, try to note: location, number of people, physical descriptions,
-                vehicle details if applicable, and any other relevant observations.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident deserunt.
               </p>
             </div>
             <div className="space-y-4">
               {[
                 {
-                  country: "United States",
-                  line: "1-888-373-7888",
-                  org: "National Human Trafficking Hotline",
-                  text: "Text: 233733",
+                  country: "Placeholder Country One",
+                  line: "0-000-000-0000",
+                  org: "Placeholder Organization Name",
+                  text: "Text: 000000",
                 },
                 {
-                  country: "United Kingdom",
-                  line: "0800 0121 700",
-                  org: "Modern Slavery Helpline",
+                  country: "Placeholder Country Two",
+                  line: "0000 0000 000",
+                  org: "Placeholder Organization Name",
                   text: null,
                 },
                 {
-                  country: "Australia",
-                  line: "1800 021 221",
-                  org: "Australian Federal Police",
+                  country: "Placeholder Country Three",
+                  line: "0000 000 000",
+                  org: "Placeholder Organization Name",
                   text: null,
                 },
                 {
-                  country: "International",
-                  line: "report.unhcr.org",
-                  org: "UNHCR — Report exploitation",
+                  country: "Placeholder International",
+                  line: "placeholder.url",
+                  org: "Placeholder Organization Name",
                   text: null,
                 },
               ].map((entry) => (

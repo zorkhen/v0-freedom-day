@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 const HEADER_OFFSET = 96
 
@@ -14,35 +14,31 @@ const sections = [
 
 export function SectionNavigator() {
   const [activeSection, setActiveSection] = useState(sections[0].id)
+  const [minimized, setMinimized] = useState(false)
+  const cooldownRef = useRef(false)
 
   useEffect(() => {
-    const elements = sections
-      .map((section) => document.getElementById(section.id))
-      .filter((element): element is HTMLElement => element instanceof HTMLElement)
+    const handleScroll = () => {
+      if (cooldownRef.current) return
 
-    if (!elements.length) {
-      return
+      const scrollY = window.scrollY
+      const threshold = window.innerHeight * 0.3
+
+      let current = sections[0].id
+      for (const section of sections) {
+        const el = document.getElementById(section.id)
+        if (!el) continue
+        const top = el.getBoundingClientRect().top + scrollY
+        if (scrollY + threshold >= top) {
+          current = section.id
+        }
+      }
+      setActiveSection(current)
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntries = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((left, right) => right.intersectionRatio - left.intersectionRatio)
-
-        if (visibleEntries.length > 0) {
-          setActiveSection(visibleEntries[0].target.id)
-        }
-      },
-      {
-        rootMargin: "-20% 0px -55% 0px",
-        threshold: [0.2, 0.35, 0.5, 0.7],
-      },
-    )
-
-    elements.forEach((element) => observer.observe(element))
-
-    return () => observer.disconnect()
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    handleScroll()
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   const navigateToSection = (sectionId: string) => {
@@ -51,6 +47,10 @@ export function SectionNavigator() {
     if (!element) {
       return
     }
+
+    setActiveSection(sectionId)
+    cooldownRef.current = true
+    setTimeout(() => { cooldownRef.current = false }, 1000)
 
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     const top = element.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET
@@ -62,37 +62,57 @@ export function SectionNavigator() {
   }
 
   return (
-    <aside className="pointer-events-none fixed bottom-4 right-4 z-40 w-[min(13rem,calc(100vw-2rem))]">
-      <div className="pointer-events-auto border border-neutral-200 bg-white/95 p-3 shadow-[0_18px_40px_rgba(15,23,42,0.12)] backdrop-blur">
-        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-neutral-500">
-          On this page
-        </p>
-        <div className="space-y-1.5">
-          {sections.map((section) => {
-            const isActive = section.id === activeSection
-
-            return (
-              <button
-                key={section.id}
-                type="button"
-                onClick={() => navigateToSection(section.id)}
-                className={`flex w-full items-center gap-3 px-3 py-2 text-left text-sm transition-colors ${
-                  isActive
-                    ? "bg-red-700 text-white"
-                    : "bg-neutral-50 text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900"
-                }`}
-                aria-current={isActive ? "location" : undefined}
-              >
-                <span
-                  className={`h-2.5 w-2.5 shrink-0 ${
-                    isActive ? "bg-white" : "bg-red-700"
-                  }`}
-                />
-                <span>{section.label}</span>
-              </button>
-            )
-          })}
+    <aside className={`pointer-events-none fixed bottom-4 right-4 z-40 ${minimized ? "w-auto" : "w-[min(13rem,calc(100vw-2rem))]"}`}>
+      <div className="pointer-events-auto border border-neutral-200 bg-white/95 shadow-[0_18px_40px_rgba(15,23,42,0.12)] backdrop-blur">
+        <div className="flex items-center justify-between px-3 pt-3 pb-2">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-neutral-500">
+            On this page
+          </p>
+          <button
+            type="button"
+            onClick={() => setMinimized((v) => !v)}
+            aria-label={minimized ? "Expand navigation" : "Minimize navigation"}
+            className="flex h-5 w-5 items-center justify-center text-neutral-400 hover:text-neutral-700 transition-colors"
+          >
+            {minimized ? (
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="18 15 12 9 6 15" />
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            )}
+          </button>
         </div>
+        {!minimized && (
+          <div className="space-y-1.5 px-3 pb-3">
+            {sections.map((section) => {
+              const isActive = section.id === activeSection
+
+              return (
+                <button
+                  key={section.id}
+                  type="button"
+                  onClick={() => navigateToSection(section.id)}
+                  className={`flex w-full items-center gap-3 px-3 py-2 text-left text-sm transition-colors ${
+                    isActive
+                      ? "bg-red-700 text-white"
+                      : "bg-neutral-50 text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900"
+                  }`}
+                  aria-current={isActive ? "location" : undefined}
+                >
+                  <span
+                    className={`h-2.5 w-2.5 shrink-0 ${
+                      isActive ? "bg-white" : "bg-red-700"
+                    }`}
+                  />
+                  <span>{section.label}</span>
+                </button>
+              )
+            })}
+          </div>
+        )}
       </div>
     </aside>
   )

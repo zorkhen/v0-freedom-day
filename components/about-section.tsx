@@ -3,81 +3,75 @@ export function AboutSection() {
     <section id="about" className="scroll-mt-28 bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left column: what it is */}
+          {/* Left column */}
           <div>
             <p className="text-sm font-semibold text-red-700 uppercase tracking-wider mb-3">
-              About the Campaign
+              Placeholder Label
             </p>
             <h2 className="text-3xl font-bold text-neutral-900 sm:text-4xl tracking-tight text-balance">
-              What is #MyFreedomDay?
+              Placeholder Heading One
             </h2>
             <div className="mt-6 space-y-4 text-neutral-600 leading-relaxed">
               <p>
-                #MyFreedomDay is a student-led global day of action against modern slavery,
-                powered by CNN. Held each year on March 14, it asks one simple but profound
-                question to young people around the world: <strong className="text-neutral-800">What does freedom mean to you?</strong>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. <strong className="text-neutral-800">Placeholder emphasis text.</strong>
               </p>
               <p>
-                The initiative was launched by CNN in partnership with anti-slavery organizations
-                to engage schools, universities, and communities in a global conversation about
-                human trafficking and forced labor. Students participate by hosting events,
-                sharing messages, and educating their peers.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur.
               </p>
               <p>
-                Awareness is the first and most critical tool in the fight against modern slavery.
-                Traffickers rely on public ignorance. The more people understand how slavery
-                operates, what it looks like, and who it affects, the harder it becomes for
-                exploitation to go unnoticed and unreported.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium.
               </p>
             </div>
-          {/* Image */}
+            {/* Image placeholder */}
             <div className="mt-8">
-              <img
-                src="/images/about-campaign.jpg"
-                alt="Students holding awareness signs at a #MyFreedomDay school event"
-                className="w-full object-cover aspect-video"
-              />
+              <div className="w-full aspect-video bg-neutral-200 flex items-center justify-center">
+                <span className="text-neutral-400 text-sm">Image placeholder</span>
+              </div>
               <p className="mt-2 text-xs text-neutral-400">
-                Students participating in a #MyFreedomDay awareness event.
+                Placeholder image caption text.
               </p>
             </div>
           </div>
+
+          {/* Right column */}
           <div>
             <p className="text-sm font-semibold text-red-700 uppercase tracking-wider mb-3">
-              Defining the Issue
+              Placeholder Label
             </p>
             <h2 className="text-3xl font-bold text-neutral-900 sm:text-4xl tracking-tight text-balance">
-              What is Modern Slavery?
+              Placeholder Heading Two
             </h2>
             <div className="mt-6 space-y-4 text-neutral-600 leading-relaxed">
               <p>
-                Modern slavery is an umbrella term covering serious exploitations including
-                human trafficking, forced labor, debt bondage, forced marriage, and domestic
-                servitude. While legal slavery was abolished worldwide, these practices
-                continue in every region of the globe.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque
+                porro quisquam est.
               </p>
               <p>
-                Unlike historical chattel slavery, modern slavery is often hidden in plain
-                sight — in supply chains, private households, nail salons, car washes, and
-                construction sites. Victims are controlled through violence, threats, debt
-                manipulation, and document confiscation.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                excepturi sint occaecati cupiditate.
               </p>
             </div>
 
-            {/* Key definitions */}
             <dl className="mt-8 space-y-4">
               {[
                 {
-                  term: "Human Trafficking",
-                  def: "The recruitment, transport, or harboring of people by force, fraud, or coercion for exploitation.",
+                  term: "Placeholder Term One",
+                  def: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
                 },
                 {
-                  term: "Forced Labor",
-                  def: "Any work performed under threat of penalty that a person has not offered themselves for voluntarily.",
+                  term: "Placeholder Term Two",
+                  def: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
                 },
                 {
-                  term: "Debt Bondage",
-                  def: "Requiring a person to work to repay a debt under terms that make repayment impossible.",
+                  term: "Placeholder Term Three",
+                  def: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
                 },
               ].map(({ term, def }) => (
                 <div key={term} className="border-l-2 border-red-700 pl-4">

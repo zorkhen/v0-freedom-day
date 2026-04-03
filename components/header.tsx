@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
 const navigation = [
-  { name: "Gallery", href: "/gallery" },
+  { name: "Placeholder Nav", href: "/gallery" },
 ]
 
 export function Header() {
@@ -18,10 +18,10 @@ export function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center bg-red-700 text-white font-bold text-sm tracking-tight">
-              MFD
+              PLH
             </div>
             <span className="text-base font-semibold text-neutral-900 tracking-tight">
-              #MyFreedomDay
+              #PlaceholderBrand
             </span>
           </Link>
         </div>
@@ -51,16 +51,16 @@ export function Header() {
           ))}
         </div>
 
-        {/* Emergency hotline pill */}
+        {/* CTA pill */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="tel:18883737888"
+            href="tel:00000000000"
             className="inline-flex items-center gap-2 border border-red-700 px-4 py-2 text-sm font-semibold text-red-700 hover:bg-red-50"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            US Hotline: 1-888-373-7888
+            Placeholder: 0-000-000-0000
           </a>
         </div>
       </nav>
@@ -81,10 +81,10 @@ export function Header() {
             ))}
             <div className="pt-4 border-t border-neutral-100">
               <a
-                href="tel:18883737888"
+                href="tel:00000000000"
                 className="block py-2 text-sm font-semibold text-red-700"
               >
-                US Hotline: 1-888-373-7888
+                Placeholder: 0-000-000-0000
               </a>
             </div>
           </div>

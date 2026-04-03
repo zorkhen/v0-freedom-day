@@ -1,52 +1,52 @@
 export function ResourcesSection() {
   const reports = [
     {
-      category: "Global Index",
-      title: "Global Slavery Index 2023",
-      publisher: "Walk Free Foundation",
+      category: "Placeholder Category",
+      title: "Placeholder Resource Title One",
+      publisher: "Placeholder Publisher Name",
       description:
-        "The world's most comprehensive data on modern slavery, covering 160 countries. Includes government response rankings, prevalence estimates, and vulnerability factors.",
-      href: "https://www.walkfree.org/global-slavery-index/",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.",
+      href: "#",
     },
     {
-      category: "ILO Report",
-      title: "Global Estimates of Modern Slavery",
-      publisher: "International Labour Organization",
+      category: "Placeholder Category",
+      title: "Placeholder Resource Title Two",
+      publisher: "Placeholder Publisher Name",
       description:
-        "Joint ILO and Walk Free report providing the most authoritative global statistics on forced labor and forced marriage, updated in 2022.",
-      href: "https://www.ilo.org/global/topics/forced-labour/publications/WCMS_854733/lang--en/index.htm",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      href: "#",
     },
     {
-      category: "UN Report",
-      title: "Global Report on Trafficking in Persons",
-      publisher: "UNODC",
+      category: "Placeholder Category",
+      title: "Placeholder Resource Title Three",
+      publisher: "Placeholder Publisher Name",
       description:
-        "Biennial report by the UN Office on Drugs and Crime analyzing trafficking patterns, victim profiles, criminal justice responses, and trends across world regions.",
-      href: "https://www.unodc.org/unodc/data-and-analysis/glotip.html",
+        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.",
+      href: "#",
     },
     {
-      category: "UK Legislation",
-      title: "Modern Slavery Act 2015",
-      publisher: "UK Parliament",
+      category: "Placeholder Category",
+      title: "Placeholder Resource Title Four",
+      publisher: "Placeholder Publisher Name",
       description:
-        "The United Kingdom's landmark legislation consolidating offenses related to trafficking and slavery. Requires large companies to publish annual transparency statements on their supply chains.",
-      href: "https://www.legislation.gov.uk/ukpga/2015/30/contents",
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.",
+      href: "#",
     },
     {
-      category: "Educational",
-      title: "Free the Slaves — Learning Resources",
-      publisher: "Free the Slaves NGO",
+      category: "Placeholder Category",
+      title: "Placeholder Resource Title Five",
+      publisher: "Placeholder Publisher Name",
       description:
-        "Guides and educational materials for teachers, students, and community groups looking to learn about and discuss modern slavery in a structured way.",
-      href: "https://www.freetheslaves.net/",
+        "Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis voluptas.",
+      href: "#",
     },
     {
-      category: "Journalism",
-      title: "CNN Freedom Project",
-      publisher: "CNN",
+      category: "Placeholder Category",
+      title: "Placeholder Resource Title Six",
+      publisher: "Placeholder Publisher Name",
       description:
-        "The original journalism initiative behind #MyFreedomDay. A long-running investigative series covering individual stories of modern slavery and the global response to it.",
-      href: "https://edition.cnn.com/specials/world/freedom-project",
+        "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non.",
+      href: "#",
     },
   ]
 
@@ -56,15 +56,14 @@ export function ResourcesSection() {
         {/* Section header */}
         <div className="max-w-2xl mb-14">
           <p className="text-sm font-semibold text-red-700 uppercase tracking-wider mb-3">
-            Resources
+            Placeholder Label
           </p>
           <h2 className="text-3xl font-bold text-neutral-900 sm:text-4xl tracking-tight text-balance">
-            Further Reading &amp; Research
+            Placeholder Section Heading
           </h2>
           <p className="mt-4 text-lg text-neutral-600 leading-relaxed">
-            The following reports, datasets, and publications are authoritative sources for
-            anyone seeking to understand the scale, mechanics, and legal frameworks around
-            modern slavery.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
           </p>
         </div>
 
@@ -89,7 +88,7 @@ export function ResourcesSection() {
                 {resource.description}
               </p>
               <div className="mt-5 flex items-center gap-1 text-sm font-medium text-red-700">
-                View resource
+                Placeholder link text
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
@@ -100,13 +99,13 @@ export function ResourcesSection() {
 
         {/* Key organizations */}
         <div className="mt-16">
-          <h3 className="text-lg font-semibold text-neutral-900 mb-6">Key Organizations Working on This Issue</h3>
+          <h3 className="text-lg font-semibold text-neutral-900 mb-6">Placeholder Organizations Heading</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { name: "International Justice Mission", url: "https://www.ijm.org", focus: "Rescue & restoration" },
-              { name: "Anti-Slavery International", url: "https://www.antislavery.org", focus: "Advocacy & policy" },
-              { name: "Polaris Project", url: "https://polarisproject.org", focus: "US hotline & research" },
-              { name: "ECPAT International", url: "https://www.ecpat.org", focus: "Child trafficking" },
+              { name: "Placeholder Organization One", url: "#", focus: "Placeholder focus" },
+              { name: "Placeholder Organization Two", url: "#", focus: "Placeholder focus" },
+              { name: "Placeholder Organization Three", url: "#", focus: "Placeholder focus" },
+              { name: "Placeholder Organization Four", url: "#", focus: "Placeholder focus" },
             ].map((org) => (
               <a
                 key={org.name}
